@@ -54,11 +54,7 @@
                     <th>&nbsp;Description&nbsp;</th>
                 </tr>
                 <?php
-                        $con = mysql_connect("localhost", "srvmdk", "DeodimaILU");
-                        if(!con) {
-                            die("Unable to connect to database ".mysql_error());
-                        }
-                        mysql_select_db("mycal", $con);
+                        include("includes/dbconnect.php");
                         $query="SELECT * FROM events WHERE date='".date("Y-m-d")."'";
                         $x=mysql_query($query);
                         if(mysql_num_rows($x)==0){
