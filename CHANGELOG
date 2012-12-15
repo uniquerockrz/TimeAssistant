@@ -1,0 +1,26 @@
+0.1 Version
+
+Basics planned out, faliure due to no clear idea about databases
+
+0.2 Version
+
+Basic structure formed with Schedule, Plans, Events, TODO, Categories and Time Table
+
+0.3 Version
+
+Priority in plans
+Polish in looks
+
+TODO
+
+Single configuration file for database user and pass
+Install file
+Universal top banner
+Better looks
+Email alerts of schedule, remainders etc
+Password protection
+Encryption
+User management
+Better looking overall
+view events in schedule
+friends to call
