@@ -4,12 +4,12 @@ version 0.3-unstable
 <p align="center"><font face="comic sans ms">I am your boss, I tell you what to do :-P</font></p>
 <fieldset>
 <font face="georgia">
-<a href="http://saurav.modak/~srvmdk/timeassistant/index.php" >&nbsp;Home&nbsp;</a> |
-<a href="http://saurav.modak/~srvmdk/timeassistant/plans/plans.php" >&nbsp;Plans&nbsp;</a> |
-<a href="http://saurav.modak/~srvmdk/timeassistant/events/events.php" >&nbsp;Events&nbsp;</a> |
-<a href="http://saurav.modak/~srvmdk/timeassistant/todo/todo.php" >&nbsp;TODO&nbsp;</a> |
-<a href="http://saurav.modak/~srvmdk/timeassistant/categories/categories.php" >&nbsp;Categories&nbsp;</a> |
-<a href="http://saurav.modak/~srvmdk/timeassistant/timetable/timetable.php" >&nbsp;Time Table&nbsp;</a>
+<a href="index.php" >&nbsp;Home&nbsp;</a> |
+<a href="../plans/plans.php" >&nbsp;Plans&nbsp;</a> |
+<a href="../events/events.php" >&nbsp;Events&nbsp;</a> |
+<a href="../todo/todo.php" >&nbsp;TODO&nbsp;</a> |
+<a href="../categories/categories.php" >&nbsp;Categories&nbsp;</a> |
+<a href="../timetable/timetable.php" >&nbsp;Time Table&nbsp;</a>
 </font>
 </fieldset>
 </center>
