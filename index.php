@@ -3,7 +3,8 @@
 	<title>TimeAssistant - Home</title>
 </head>
 <body>
-	<?php
+	<?php	
+		$index=true;		
 		include("includes/topbanner.php");
 	?>
     <p align="center"><i>Your Schedule For Today:</i></p>

@@ -11,10 +11,9 @@ This will install TimeAssistant in your LAMP server
         Beginning installation... Done!<br>
         <?php
             echo "Connecting Database<br>";
-            include("../includes/dbconnect.php");
+            include("includes/dbconnect.php");
             echo "Installing categories<br>";
-            mysql_select_db("time_assistant", $con);
-            $query="CREATE TABLE `categories` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(20) NOT NULL, `desc` varchar(140) NOT NULL, PRIMARY KEY (`id`))";
+			$query="CREATE TABLE `categories` (`id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(20) NOT NULL, `desc` varchar(140) NOT NULL, PRIMARY KEY (`id`))";
             $x = mysql_query($query);
             if($x==1){
                     echo "Done Installing Categories";
