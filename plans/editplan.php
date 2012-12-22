@@ -11,10 +11,9 @@ and open the template in the editor.
     <body>
         <?php
 		include("../includes/topbanner.php");
-	?>
-        <?php
+	
 		include("../includes/dbconnect.php");
-                $x = mysql_query("SELECT * FROM mycal.plans WHERE id=".$_GET['id']);
+                $x = mysql_query("SELECT * FROM plans WHERE id=".$_GET['id']);
                 $row = mysql_fetch_array($x);
                 echo "<fieldset>";
                 echo "<legend>Edit Plan</legend>";
@@ -27,14 +26,8 @@ and open the template in the editor.
                 echo "<input type='submit' />";
                 echo "</fieldset>";
                 mysql_close($con);
-        ?>
-         <?php
-                        $con = mysql_connect("localhost", "srvmdk", "DeodimaILU");
-			if(!con) {
-				die("Unable to connect to database ".mysql_error());
-				}
-			mysql_select_db("mycal", $con);
-			$x = mysql_query("SELECT * FROM `mycal`.`categories`");
+       
+			$x = mysql_query("SELECT * FROM `categories`");
 			while($row=mysql_fetch_array($x)) 
 			{
 				echo $row['id']."&nbsp;:&nbsp;";

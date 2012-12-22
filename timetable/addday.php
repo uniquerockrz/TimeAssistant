@@ -14,7 +14,7 @@ Add a new day time event result
         <h4>Add day result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "INSERT INTO mycal.day (`day`.`day`, `day`.`start_time`, `day`.`end_time`, `day`.`category`) VALUES('".$_POST['day']."','".$_POST['start_time']."','".$_POST['end_time']."','".$_POST['category']."')";
+                $query = "INSERT INTO day (`day`, `start_time`, `end_time`, `category`) VALUES('".$_POST['day']."','".$_POST['start_time']."','".$_POST['end_time']."','".$_POST['category']."')";
                 $x = mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";

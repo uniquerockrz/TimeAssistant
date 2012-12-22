@@ -15,7 +15,7 @@ and open the template in the editor.
         <h4>Edit Plan Result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "UPDATE mycal.plans SET `plans`.`category`='".$_POST['category']."', `plans`.`desc`='".$_POST['desc']."', `plans`.`deadline`='".$_POST['deadline']."', `plans`.`priority`='".$_POST['priority']."' WHERE `plans`.`id`=".$_POST['id'];
+                $query = "UPDATE plans SET `category`='".$_POST['category']."', `desc`='".$_POST['desc']."', `deadline`='".$_POST['deadline']."', `priority`='".$_POST['priority']."' WHERE `id`=".$_POST['id'];
                 $x=mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -29,6 +29,6 @@ and open the template in the editor.
                 }
          ?>
     <br>
-    <a href="plans.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

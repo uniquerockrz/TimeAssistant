@@ -14,7 +14,7 @@ Delete Plan
 	<h4>Delete Plan</h4>
         <?php
 			include("../includes/dbconnect.php");
-                        $query="DELETE FROM `mycal`.`plans` WHERE `plans`.`id`=".$_GET['id'];
+                        $query="DELETE FROM `plans` WHERE `id`=".$_GET['id'];
                         $x = mysql_query($query);
                         if($x==1){
                             echo "<fieldset>";
@@ -28,6 +28,6 @@ Delete Plan
                         }
         ?>
     <br>
-    <a href="plans.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

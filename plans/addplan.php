@@ -15,7 +15,7 @@ and open the template in the editor.
         <h4>Add plan result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "INSERT INTO mycal.plans (`plans`.`category`, `plans`.`desc`, `plans`.`deadline`, `plans`.`priority`, `plans`.`done`) VALUES('".$_POST['catid']."','".$_POST['desc']."','".$_POST['dl']."','".$_POST['priority']."', 0)";
+                $query = "INSERT INTO plans (`category`, `desc`, `deadline`, `priority`, `done`) VALUES('".$_POST['catid']."','".$_POST['desc']."','".$_POST['dl']."','".$_POST['priority']."', 0)";
                 $x = mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -30,6 +30,6 @@ and open the template in the editor.
                 mysql_close($con);
         ?>
     <br><br>
-    <a href="plans.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

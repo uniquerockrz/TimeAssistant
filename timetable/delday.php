@@ -14,7 +14,7 @@ Delete a day event
 	<h4>Delete Day</h4>
         <?php
 			include("../includes/dbconnect.php");
-                        $query="DELETE FROM `mycal`.`day` WHERE `day`.`id`=".$_GET['id'];
+                        $query="DELETE FROM `day` WHERE `id`=".$_GET['id'];
                         $x = mysql_query($query);
                         if($x==1){
                             echo "<fieldset>";

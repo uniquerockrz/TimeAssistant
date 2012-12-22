@@ -28,6 +28,6 @@ This page deletes a category based on GET variable
                         }
         ?>
         <br>
-    <a href="categories.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

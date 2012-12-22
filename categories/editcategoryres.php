@@ -14,7 +14,7 @@ Result Of Edit Category
         <h4>TimeAssistant - Edit Category Result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "UPDATE mycal.categories SET `categories`.`name`='".$_POST['name']."', `categories`.`desc`='".$_POST['desc']."' WHERE `categories`.`id`=".$_POST['id'];
+                $query = "UPDATE categories SET `categories`.`name`='".$_POST['name']."', `categories`.`desc`='".$_POST['desc']."' WHERE `categories`.`id`=".$_POST['id'];
                 $x=mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -28,6 +28,6 @@ Result Of Edit Category
                 }
          ?>
     <br>
-    <a href="categories.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

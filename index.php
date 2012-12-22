@@ -20,7 +20,7 @@
                         $d=date('w');
                         $d++;
                         include("includes/dbconnect.php");
-                        $query = "SELECT * FROM mycal.day WHERE `day`.`day`=".$d;
+                        $query = "SELECT * FROM day WHERE `day`=".$d;
                         $x=mysql_query($query) or die (mysql_error());
                         if(mysql_num_rows($x)==0){
                             echo "</table>";

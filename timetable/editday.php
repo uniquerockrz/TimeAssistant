@@ -13,7 +13,7 @@ Edit a day event
 	?>
         <?php
 		include("../includes/dbconnect.php");
-                $x = mysql_query("SELECT * FROM `mycal`.`day` WHERE id=".$_GET['id']);
+                $x = mysql_query("SELECT * FROM `day` WHERE id=".$_GET['id']);
                 $row = mysql_fetch_array($x);
                 echo "<fieldset>";
                 echo "<legend>Edit Day</legend>";

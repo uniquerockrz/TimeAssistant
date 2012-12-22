@@ -14,7 +14,7 @@ Add Event Result
         <h4>Add event result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "INSERT INTO mycal.events (`events`.`date`, `events`.`start_time`, `events`.`end_time`, `events`.`desc`) VALUES('".$_POST['date']."','".$_POST['start_time']."','".$_POST['end_time']."','".$_POST['desc']."')";
+                $query = "INSERT INTO events (`date`, `start_time`, `end_time`, `desc`) VALUES('".$_POST['date']."','".$_POST['start_time']."','".$_POST['end_time']."','".$_POST['desc']."')";
                 $x = mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -29,6 +29,6 @@ Add Event Result
                 mysql_close($con);
         ?>
     <br><br>
-    <a href="events.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

@@ -14,7 +14,7 @@ Edit Event Result
         <h4>Edit Event Result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "UPDATE mycal.events SET `events`.`date`='".$_POST['date']."', `events`.`start_time`='".$_POST['start_time']."', `events`.`end_time`='".$_POST['end_time']."', `events`.`desc`='".$_POST['desc']."' WHERE `events`.`id`=".$_POST['id'];
+                $query = "UPDATE events SET `date`='".$_POST['date']."', `start_time`='".$_POST['start_time']."', `end_time`='".$_POST['end_time']."', `desc`='".$_POST['desc']."' WHERE `id`=".$_POST['id'];
                 $x=mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -28,6 +28,6 @@ Edit Event Result
                 }
         ?>
     <br>
-    <a href="events.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

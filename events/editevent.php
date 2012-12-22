@@ -14,7 +14,7 @@ and open the template in the editor.
 	?>
         <?php
 		include("../includes/dbconnect.php");
-                $x = mysql_query("SELECT * FROM `mycal`.`events` WHERE id=".$_GET['id']);
+                $x = mysql_query("SELECT * FROM `events` WHERE id=".$_GET['id']);
                 $row = mysql_fetch_array($x);
                 echo "<fieldset>";
                 echo "<legend>Edit Event</legend>";

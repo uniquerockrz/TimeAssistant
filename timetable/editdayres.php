@@ -14,7 +14,7 @@ Edit day event result
         <h4>Edit Day Result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "UPDATE mycal.day SET `day`.`day`='".$_POST['day']."', `day`.`start_time`='".$_POST['start_time']."', `day`.`end_time`='".$_POST['end_time']."' ,`day`.`category`='".$_POST['category']."' WHERE `day`.`id`=".$_POST['id'];
+                $query = "UPDATE day SET `day`='".$_POST['day']."', `start_time`='".$_POST['start_time']."', `end_time`='".$_POST['end_time']."' ,`category`='".$_POST['category']."' WHERE `id`=".$_POST['id'];
                 $x=mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";

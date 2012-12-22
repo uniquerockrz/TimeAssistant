@@ -1,3 +1,6 @@
+<?php
+error_reporting(0);
+?>
 <center>
 <?php if($index == true) 
 	echo '<img src="includes/logo.jpg" align="center"/></br>';
@@ -14,11 +17,11 @@ else
 	$tmp="./";
 ?>
 <a href="<?php echo $tmp; ?>index.php" >&nbsp;Home&nbsp;</a> |
-<a href="<?php echo $tmp; ?>plans/plans.php" >&nbsp;Plans&nbsp;</a> |
-<a href="<?php echo $tmp; ?>events/events.php" >&nbsp;Events&nbsp;</a> |
-<a href="<?php echo $tmp; ?>todo/todo.php" >&nbsp;TODO&nbsp;</a> |
-<a href="<?php echo $tmp; ?>categories/categories.php" >&nbsp;Categories&nbsp;</a> |
-<a href="<?php echo $tmp; ?>timetable/timetable.php" >&nbsp;Time Table&nbsp;</a>
+<a href="<?php echo $tmp; ?>plans/" >&nbsp;Plans&nbsp;</a> |
+<a href="<?php echo $tmp; ?>events/" >&nbsp;Events&nbsp;</a> |
+<a href="<?php echo $tmp; ?>todo/" >&nbsp;TODO&nbsp;</a> |
+<a href="<?php echo $tmp; ?>categories/" >&nbsp;Categories&nbsp;</a> |
+<a href="<?php echo $tmp; ?>timetable/" >&nbsp;Time Table&nbsp;</a>
 </font>
 </fieldset>
 </center>

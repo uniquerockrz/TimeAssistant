@@ -15,7 +15,7 @@ View a day's time table
         <center>
         <?php
             include("../includes/dbconnect.php");
-            $result=mysql_query("SELECT * FROM `mycal`.`day` WHERE `day`.`day`=".$_POST['day']);
+            $result=mysql_query("SELECT * FROM `day` WHERE `day`=".$_POST['day']);
             echo "<table border='2'>
                         <tr>
                             <th>Event ID</th>
@@ -26,7 +26,7 @@ View a day's time table
                             <th>Actions</th>
 			</tr>";
                         while($row=  mysql_fetch_array($result)){
-                            $query="SELECT * FROM mycal.categories WHERE `categories`.`id`=".$row['category'];
+                            $query="SELECT * FROM categories WHERE `id`=".$row['category'];
                             $y=mysql_query($query);
                             $r=mysql_fetch_array($y);
                             echo "<tr>";
@@ -56,7 +56,7 @@ View a day's time table
         <br>
         <?php
                         include("../includes/dbconnect.php");
-			$x = mysql_query("SELECT * FROM `mycal`.`categories`");
+			$x = mysql_query("SELECT * FROM `categories`");
 			while($row=mysql_fetch_array($x)) 
 			{
 				echo $row['id']."&nbsp;:&nbsp;";

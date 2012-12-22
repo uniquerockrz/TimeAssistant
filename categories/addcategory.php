@@ -14,7 +14,7 @@ This page shows the results of a add category, data carried from last page by PO
         <h4>TimeAssistant - Add Category Result</h4>
         <?php
 		include("../includes/dbconnect.php");
-                $query = "INSERT INTO mycal.categories (`categories`.`name`, `categories`.`desc`) VALUES('".$_POST['name']."','".$_POST['desc']."')";
+                $query = "INSERT INTO categories (`categories`.`name`, `categories`.`desc`) VALUES('".$_POST['name']."','".$_POST['desc']."')";
                 $x = mysql_query($query);
                 if($x==1){
                     echo "<fieldset>";
@@ -29,6 +29,6 @@ This page shows the results of a add category, data carried from last page by PO
                 mysql_close($con);
         ?>
     <br><br>
-    <a href="categories.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>

@@ -14,7 +14,7 @@ Mark a plan as done
 	<h4>Plan Done</h4>
         <?php
 			include("../includes/dbconnect.php");
-                        $query="UPDATE mycal.plans SET `plans`.`done`=1 WHERE `plans`.`id`=".$_GET['id'];
+                        $query="UPDATE plans SET `done`=1 WHERE `id`=".$_GET['id'];
                         $x = mysql_query($query);
                         if($x==1){
                             echo "<fieldset>";
@@ -28,6 +28,6 @@ Mark a plan as done
                         }
         ?>
     <br>
-    <a href="plans.php">Back</a>
+    <a href="index.php">Back</a>
     </body>
 </html>
